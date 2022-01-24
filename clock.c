@@ -3,17 +3,20 @@
 
 void main()
 {
-    int h,m,s;
+    int h,m,s; 
     int a,b,c;
-
     double i;
-    system("cls");
-    printf("Current Time:");
+    
+    system("cls");// clear screen
+    printf("Current Time");
 
+    printf("\nHours:");
     scanf("%d",&h);
+    printf("\nMinutes:");
     scanf("%d",&m);
 
     printf("Enter Alarm Time");
+   
     printf("\nHours:");
     scanf("%d",&a);
     printf("\nMinutes:");
