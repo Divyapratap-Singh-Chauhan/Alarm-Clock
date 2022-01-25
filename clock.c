@@ -8,6 +8,8 @@ void main()
     double i;
     
     system("cls");// clear screen
+
+    //Input Current time
     printf("Current Time");
 
     printf("\nHours:");
@@ -15,6 +17,7 @@ void main()
     printf("\nMinutes:");
     scanf("%d",&m);
 
+    //Input Alarm time
     printf("Enter Alarm Time");
    
     printf("\nHours:");
@@ -24,7 +27,7 @@ void main()
     printf("\nSeconds:");
     scanf("%d",&c);
 
-while(1){
+while(1){  //Infinite Loop
     for(h;h<24;h++)
     {
         for (m;m< 60; m++)
@@ -33,20 +36,20 @@ while(1){
             {
                 system("cls");
                 
-                if(a==h&&b==m&&c==s)
+                if(a==h&&b==m&&c==s) //if clock time = alarm time
                 {
                     printf("\n\n\n\t\t\tALARM");
 
-                    for(i=1;i<950000000;i++)
+                    for(i=1;i<950000000;i++) // 5 secs delay
                 {
                 }
-                s=s+5;
+                s=s+5; // 5 seconds added to the time
                 }
 
                 else {printf("\n\n\n\t\t\t%d:%d:%d",h,m,s);}
 
                 
-                for(i=1;i<190000000;i++)
+                for(i=1;i<190000000;i++) //1 sec delay for getting correct time
                 {
                 }
             }
@@ -57,6 +60,6 @@ while(1){
     }
     h=0;
 }
-   // getch();
+   getch();
 
 }
